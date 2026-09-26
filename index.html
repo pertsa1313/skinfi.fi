@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinFi</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101114;
+      color: white;
+    }
+
+    header {
+      background: #181a20;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #292c35;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #6c8cff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #5865f2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .skins {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .skins h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skin {
+      background: #181a20;
+      border: 1px solid #292c35;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .skin img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: contain;
+    }
+
+    .price {
+      color: #65e572;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SkinFi</div>
+
+  <nav>
+    <a href="#">Etusivu</a>
+    <a href="#skins">Skinit</a>
+    <a href="#">Giveaway</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>SkinFi</h1>
+  <p>CS2-skinit ja virtuaaliset pelit samassa paikassa.</p>
+  <a class="button" href="#skins">Katso skinit</a>
+</section>
+
+<section class="skins" id="skins">
+  <h2>Suositut skinit</h2>
+
+  <div class="grid">
+
+    <div class="skin">
+      <img src="https://placehold.co/400x250/181a20/ffffff?text=AK-47">
+      <h3>AK-47</h3>
+      <p class="price">12,50 €</p>
+    </div>
+
+    <div class="skin">
+      <img src="https://placehold.co/400x250/181a20/ffffff?text=AWP">
+      <h3>AWP</h3>
+      <p class="price">25,00 €</p>
+    </div>
+
+    <div class="skin">
+      <img src="https://placehold.co/400x250/181a20/ffffff?text=Knife">
+      <h3>Knife</h3>
+      <p class="price">89,00 €</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
